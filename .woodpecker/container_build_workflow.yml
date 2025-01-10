@@ -1,0 +1,14 @@
+when: 
+  - event: push
+    branch: master
+
+steps:
+  - name: build
+    image: woodpeckerci/plugin-docker-buildx
+    settings:
+      repo: sylviamic/2025_wen_chandrasekaran_jupyter_nbimage
+      tags: latest
+      username:
+        from_secret: dockerhub_auth_username
+      password:
+        from_secret: dockerhub_auth_token
