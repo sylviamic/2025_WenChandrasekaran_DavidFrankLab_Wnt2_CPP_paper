@@ -52,6 +52,6 @@ start performing your re-analysis!
 
 ## Contact
 
-Sylvia N. Michki (`michkin [at] chop [dot] edu`) @sylviamic
+Sylvia N. Michki (`michkin [at] chop [dot] edu`)
 
 David B. Frank (`frankd [at] chop [dot] edu`)
