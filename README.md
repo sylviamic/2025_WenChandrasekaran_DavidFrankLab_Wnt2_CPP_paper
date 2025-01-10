@@ -43,7 +43,7 @@ docker run \
 	sylviamic/2025_wen_chandrasekaran_jupyter_nbimage
 ```
 
-Open `[http://127.0.0.1:8989](http://127.0.0.1:8989)` in your favorite web browser and
+Open [http://127.0.0.1:8989](http://127.0.0.1:8989) in your favorite web browser and
 start performing your re-analysis!
 
 ## Citation
