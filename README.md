@@ -13,41 +13,45 @@ Children's Hospital of Philadelpia (CHOP).
 
 Clone the repository:
 
-```
+```shell
 git clone https://github.com/sylviamic/2025_WenChandrasekaran_DavidFrankLab_Wnt2_CPP_paper
 ```
 
 Build the container:
 
-```
+```shell
 cd 2025_WenChandrasekaran_DavidFrankLab_Wnt2_CPP_paper
-docker image build --tag 2025_wen_chandrasekaran_jupyter_nbimage .
+docker image build --tag sylviamic/2025_wen_chandrasekaran_jupyter_nbimage .
 ```
 
 Download the data:
 
-```
+```shell
 cd 2025_WenChandrasekaran_DavidFrankLab_Wnt2_CPP_paper/data
 wget -i raw_data_download_urls.txt
 ```
 
 Launch the container:
-```
+
+```shell
 cd 2025_WenChandrasekaran_DavidFrankLab_Wnt2_CPP_paper
 docker run \
 	-v ./data:/home/jovyan/data \
 	-v ./notebooks:/home/jovyan/notebooks \
 	-it \
 	-p 8989:8888 \
-	2025_wen_chandrasekaran_jupyter_nbimage
+	sylviamic/2025_wen_chandrasekaran_jupyter_nbimage
 ```
 
-Open `http://127.0.0.1:8989` in your favorite web browser and
+Open `[http://127.0.0.1:8989](http://127.0.0.1:8989)` in your favorite web browser and
 start performing your re-analysis!
 
 ## Citation
+
 [forthcoming]
 
 ## Contact
-Sylvia N. Michki (`michkin [at] chop [dot] edu`)
+
+Sylvia N. Michki (`michkin [at] chop [dot] edu`) @sylviamic
+
 David B. Frank (`frankd [at] chop [dot] edu`)
